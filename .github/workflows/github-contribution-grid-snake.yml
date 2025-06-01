@@ -18,8 +18,12 @@ jobs:
         uses: Platane/snk@master
         with:
           github_user_name: SWETHACS17
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          gif_out_path: dist/github-contribution-grid-snake.gif
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+          # Add GitHub-like contribution colors (green scale on dark background)
+          # Dark grid background and green shades for dots
+          color_snake: #00FF00
+          color_dots: #161b22,#0e4429,#006d32,#26a641,#39d353
 
       - name: Push to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
