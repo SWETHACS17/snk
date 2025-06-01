@@ -20,10 +20,8 @@ jobs:
           github_user_name: SWETHACS17
           outputs: |
             dist/github-contribution-grid-snake.svg
-          # Add GitHub-like contribution colors (green scale on dark background)
-          # Dark grid background and green shades for dots
           color_snake: #00FF00
-          color_dots: #161b22,#0e4429,#006d32,#26a641,#39d353
+          color_dots: #161b22,#0e4429,#006d32,#26a641,#39d353  # GitHub dark theme
 
       - name: Push to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
